@@ -210,7 +210,7 @@ class chip8(object):
         self.V[self.x] = self.delay_timer
     
     def _FX15(self):
-        self.delay_timer = 0#self.V[self.x]
+        self.delay_timer = self.V[self.x]
         print self.delay_timer
     
     def _FX18(self):
